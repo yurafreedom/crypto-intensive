@@ -294,8 +294,11 @@ body {
   min-width: 320px;
   color: #fff;
   font: normal 18px/1.5 "MuseoSans", sans-serif;
-  background: url("../images/bg/main-bg-2.jpg") center top no-repeat, #000;
-  background-size: 100% auto; }
+  background: url("../images/bg/main-bg.jpg") #000;
+  background-size: auto 15650px;
+  background-position: top center;
+
+}
   @media only screen and (max-width: 720px) {
     body {
       background: url("../images/bg/main-mob-bg.jpg") center top no-repeat, #000;
@@ -304,7 +307,7 @@ body {
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   body {
-    background-size: cover 100%;
+    background-size: auto 15380px;
   }
 }
 
