@@ -149,3 +149,14 @@ function changeLanguage() {
 }
 
 changeLanguage();
+
+$('[data-toggle="anchor"]').click(function(e) {
+  e.preventDefault();
+  
+  var dataTarget = $(this).attr('data-target'),
+  targetPos = $(dataTarget).offset().top;
+
+  $('html,body').animate({
+  scrollTop: targetPos
+  }, 2000);
+});
