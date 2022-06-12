@@ -1,0 +1,171 @@
+@import 'fonts';
+@import 'normaliz';
+
+// Главные цвета сайта
+
+$main-color: #E3C55E;
+$sub-color: #E59BD2;
+
+// Цвет текста
+$title-color: #fff;
+$text-color: #fff;
+
+// Цвет кнопок
+
+$button-color: #fff;
+$button-bg: #57c74b;
+
+// Размер контентной части
+
+$frame: 1160px;
+
+@import 'snippets/main-snippets';
+
+%page-frame {
+	padding: 100px 0;
+	@include media("max", "md") {
+		padding: 70px 0;
+	}
+	@include media("max", "sm") {
+		padding: 50px 0;
+	}
+}
+* {
+	&::selection {
+		color: #fff; /* Цвет текста */
+    	background: $main-color; /* Цвет фона */
+	}
+}
+html, body {
+	overflow-x: hidden;
+	position: relative;
+	min-height: 100vh; 
+}
+body {
+	min-width: 320px;
+	color: $text-color;
+	font: normal 18px/1.5 $main-font;
+	background: url('../images/bg/main-bg.jpg') center top no-repeat, #000;
+	background-size: cover;
+	@include media('max', 'sm') {
+		background: url('../images/bg/main-mob-bg-2x.jpg') center top no-repeat, #000;
+		// background-size: cover;
+		background-size: 100% 11573px;
+	}
+}
+@media only screen and (max-width: 1440px) and (min-width: 1200px) {
+    body
+     {
+        zoom: 85%; }
+    }
+	.menu {
+			height: 120vh;
+		}
+		.menu-wrap {
+			min-height: 120vh;
+		}
+
+@media only screen and (max-width: 720px) {
+    body {
+      background: url("../images/bg/main-mob-bg-2x-430.jpg") center top no-repeat, #000;
+      -webkit-background-size: 100% 11573px;
+              background-size: 100% 11573px; } }
+    @media only screen and (max-width: 430px) {
+    body {
+      background: url("../images/bg/main-mob-bg-2x-414.jpg") center top no-repeat, #000;
+      -webkit-background-size: 100% 11573px;
+              background-size: 100% 11573px; } }
+    @media only screen and (max-width: 385px) {
+    body {
+      background: url("../images/bg/main-mob-bg-2x-375.jpg") center top no-repeat, #000;
+      -webkit-background-size: 100% 11573px;
+              background-size: 100% 11573px; } }
+              
+    @media only screen and (max-width: 370px) {
+    body {
+      background: url("../images/bg/main-mob-bg-2x.jpg") center top no-repeat, #000;
+      -webkit-background-size: 100% 11573px;
+              background-size: 100% 11573px; } }
+h1,h2,h3,h4,h5,h6, p {
+	margin: 0;
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+}
+h1,h2,h3,h4,h5,h6 { 
+	color: $title-color;
+	font-family: $title;
+}
+ul, ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+	&::selection {
+		color: inherit; /* Цвет текста */
+    	background: transparent; /* Цвет фона */
+	}
+}
+form {
+	box-sizing: border-box;
+}
+input {
+	outline: none;
+	box-sizing: border-box;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+textarea {
+	box-sizing: border-box;
+	outline: none;
+}
+select, option {
+	outline: none;
+	cursor: pointer;
+	appearance: none;
+}
+select::-ms-expand { 
+    display: none;
+}
+img {
+	&::selection {
+		color: inherit; /* Цвет текста */
+    	background: transparent; /* Цвет фона */
+	}
+}
+label {
+	cursor: pointer;
+	margin-bottom: 0;
+}
+.section-frame { 
+	max-width: $frame;
+	width: 100%; 
+	margin: 0 auto;
+	box-sizing: border-box;
+	@include media("max", "xl") {
+		max-width: 700px;
+	}
+	@include media("max", "sm") {
+		max-width: 375px;
+		padding: 0 20px;
+	}
+} 
+
+.load * {  
+  transition: none !important;
+}
+.open-frame	{
+	overflow: hidden;
+} 
+
+ @import 'header';
+ @import 'footer';
+ @import 'main-page';
+ @import 'politics';
+ @import 'popup';
+ @import 'courses';

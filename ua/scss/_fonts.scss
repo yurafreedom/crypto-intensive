@@ -1,0 +1,48 @@
+@mixin fonts($title, $weight, $src, $style: normal) {
+  @font-face {
+    font-family: $title;
+    src: url($src) format("woff2");
+    font-weight: $weight;
+    font-display: auto;
+    font-style: $style;
+  }  
+} 
+
+@include fonts('Bebas', 400, '../fonts/Bebas/BebasNeueCyrillic.woff2');
+@include fonts('MuseoSans', 300, '../fonts/MuseoSans/MuseoSansCyrl-300.woff');
+@include fonts('MuseoSans', 400, '../fonts/MuseoSans/MuseoSansCyrl-400.woff');
+@include fonts('MuseoSans', 500, '../fonts/MuseoSans/MuseoSansCyrl-500.woff');
+@include fonts('MuseoSans', 700, '../fonts/MuseoSans/MuseoSansCyrl-700.woff');
+
+$Bebas: 'Bebas', sans-serif;
+$MuseoSans: 'MuseoSans', sans-serif;
+
+$title: $Bebas;
+$main-font: $MuseoSans;
+$button-font: 500 18px $MuseoSans;
+ 
+@font-face {
+  font-family: 'icon-font';
+  src:  url('../fonts/icon-font/icon-font.eot?zapzd9');
+  src:  url('../fonts/icon-font/icon-font.eot?zapzd9#iefix') format('embedded-opentype'),
+    url('../fonts/icon-font/icon-font.ttf?zapzd9') format('truetype'),
+    url('../fonts/icon-font/icon-font.woff?zapzd9') format('woff'),
+    url('../fonts/icon-font/icon-font.svg?zapzd9#icon-font') format('svg');
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+}
+[class^="fa-"], [class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,8 @@
+@keyframes move-light {
+  from {
+    transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    transform: translateX(18em) skewX(-45deg);
+  }
+}

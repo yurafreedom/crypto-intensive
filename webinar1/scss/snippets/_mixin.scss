@@ -1,0 +1,90 @@
+
+// @mixin button
+
+@mixin button($width: auto, $height: auto, $color: $button-color) {
+	max-width: 100%;
+	width: $width;
+	height: $height;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1px;
+	background: $button-bg;
+	font: $button-font;
+	text-align: center;
+	color: $color;
+	box-sizing: border-box;
+	cursor: pointer;
+	position: relative;
+	input {
+		display: none;
+	}
+}
+
+// @mixin placeholder
+
+@mixin placeholder($font, $color) {
+	&::placeholder {  font: $font; color: $color; } 
+}
+
+// @mixin grid
+
+@mixin grid($item: 3, $gap-columns: 20px, $gap-rows: 20px, $break: 0, $tabletBreak: 0, $mobBreak: 1) {
+	$gridColumn: calc( (100% / #{$item}) - #{$gap-columns});
+	
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($gridColumn, 1fr));
+    grid-gap: $gap-rows $gap-columns;
+    box-sizing: border-box;
+
+	@media screen and (max-width: 1200px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc( 100% / #{$break} - #{$gap-columns}), 1fr));
+	}
+
+	@media screen and (max-width: 980px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc( 100% / #{$tabletBreak} - #{$gap-columns}), 1fr));
+	}
+
+	@media screen and (max-width: 700px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc( 100% / #{$mobBreak} - #{$gap-columns}), 1fr));
+	}
+	img {
+		max-width: 100%;
+		display: block;
+	}
+}
+
+
+// @mixin media
+
+$sizes: ("xs":400px, "sm":720px, "md":980px, "xl":1200px, "xxl":1500px);
+
+@mixin media($minmax, $media) {
+	@each $size, $resolution in $sizes {
+		@if $media == $size {
+			@media only screen and (#{$minmax}-width: $resolution) {
+				@content;
+			}
+		}
+	}
+}
+
+
+// @mixin gradient text
+
+@mixin gradient-text($gradient) {
+	background: -webkit-linear-gradient($gradient); 
+	-webkit-background-clip: text; -moz-background-clip: text;
+ 	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+ 	-moz-text-fill-color: rgba(255, 255, 255, 0); 
+	 &::selection {
+		color: inherit; /* Цвет текста */
+    	background: transparent; /* Цвет фона */
+	}
+	* {
+		&::selection {
+			color: inherit; /* Цвет текста */
+			background: transparent; /* Цвет фона */
+		}
+	}
+}

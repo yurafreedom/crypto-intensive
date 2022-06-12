@@ -1,0 +1,124 @@
+.popup-frame {
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
+	display: none;
+	justify-content: center;
+	align-items: flex-start;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.57);
+	backdrop-filter: blur(31px);
+	box-sizing: border-box;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	z-index: 80;
+}
+.popup-default {
+	display: block;
+	width: 550px;
+	padding: 75px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 20px 0 rgba(#000, 0.3);
+	position: relative;
+	margin: auto;
+	@include media('max', 'sm') {
+		padding: 50px 20px;
+	}
+	
+}
+.popup-default-title {
+	margin-bottom: 30px;
+	h3 {
+		font-size: 34px;
+		line-height: 30px;
+		text-align: center;
+		font-weight: bold;
+		color: #272727;
+	}
+	p {
+		max-width: 75%;
+		font-size: 16px;
+		line-height: 18px;
+		text-align: center;
+		font-weight: 400;
+		margin: 15px auto 0;
+		color: #999;
+	}
+	@include media('max', 'sm') {
+		h3 {
+			font-size: 24px;
+		}
+	}
+	
+}
+.popup-default-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+	position: relative;
+	p {
+		font-weight: 400;
+		position: absolute;
+		font-size: 16px;
+		bottom: 13px;
+		transition: .3s;
+		cursor: pointer;
+	}
+	input {
+		width: 100%;
+		height: 50px;
+		border: none;
+		font-size: 16px;
+		border-bottom: 1px solid #DEDEDE;
+		background-color: transparent;
+		text-align: center;
+		cursor: pointer;
+		-webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+	}
+}
+.active-default-input {
+	p {
+		bottom: 48px;
+		font-size: 12px;
+	}
+}
+.popup-default-sub {
+	@include button(100%, 60px);
+	margin-top: 40px;
+	@include media('max', 'sm') {
+		margin-top: 20px;
+	}
+}
+.popup-default-close {
+	width: 15px;
+	height: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	&::before, &::after {
+		content: '';
+		width: 20px;
+		height: 1px;
+		background-color: #999;
+		position: absolute;
+		transition: .3s;
+	}
+	&::before {
+		transform: rotate(45deg);
+	}
+	&::after {
+		transform: rotate(-45deg);
+	}
+	&:hover {
+		&::before, &::after {
+			background-color: $main-color;
+		}
+	}
+}

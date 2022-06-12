@@ -1,0 +1,115 @@
+@mixin line($color: $sub-color) { 
+	position: relative;
+	overflow: hidden;
+	&::after {
+		content: '';
+		width: 0%;
+		height: 1px;
+		background-color: $color;
+		border-radius: inherit;
+		position: absolute;
+		transition: .4s;
+		transform-origin: left;
+		bottom: 0;
+		right: 0;
+		left: auto;
+	}
+	&:hover {
+		&::after {
+			width: 100%;
+			left: 0;
+			right: auto;
+		}
+	}
+}
+@mixin swipe($color: $sub-color) { 
+	position: relative;
+	overflow: hidden;
+	&::after {
+		content: '';
+		width: 0%;
+		height: 100%;
+		background-color: $color;
+		border-radius: inherit;
+		position: absolute;
+		transition: .4s;
+		transform-origin: left;
+		bottom: 0;
+		right: 0;
+		left: auto;
+	}
+	&:hover {
+		&::after {
+			width: 100%;
+			left: 0;
+			right: auto;
+		}
+	}
+}
+@mixin move-light { 
+	overflow: hidden;
+	transition: .4s linear;
+	&:before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 1.5em;
+	    height: 100%;
+	    background-color: rgba(#fff, 0.6);
+	    transform: translateX(-4em) skewX(-45deg);
+	}
+	&:hover {
+	    &:before {
+	      animation: move-light 0.4s linear;
+	    }
+	}
+}
+@mixin move-border($color: $button-color) { 
+	transition: .2s linear;
+	&:before {
+		content: '';
+		width: 100%;
+	    height: 100%;
+	    border: 1px solid $color;
+	    opacity: 0;
+	    transform: translate(0,0);
+	    border-radius: inherit;
+	    position: absolute;
+	    transition: inherit;
+	    top: 0;
+	    left: 0;
+	} 
+	&:hover {
+	    box-shadow: 5px 5px rgba($color,.5);
+	    background: $color;
+	    &::before {
+	    	transform: translate(-8px,-8px);
+    		opacity: 1;
+	    }
+	}
+}
+
+@mixin top-bottom($color: $button-color) {
+	border: 2px solid $color;
+	color: $color !important;
+	background: transparent !important;
+	overflow: hidden;
+	&::before {
+		content: '';
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		color: #fff;
+		background-color: $color;
+		top: -2px;
+		overflow: hidden;
+		transition: top .3s, height .3s .3s;
+	}
+	&:hover {
+		&::before {
+			height: 100%;
+			top: calc(100% - 2px);
+		}
+	}
+}
