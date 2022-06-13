@@ -3,9 +3,17 @@ const langArr = {
 		"ru": "Crypto интенсив",
 		"ua": "Crypto інтенсив",
 	},
-	"header-text": {
-		"ru": "Вы с полного нуля откроете для себя крипторынок, создадите свой криптопортфель из перспективных монет и начнёте получать ежемесячную прибыль",
-		"ua": "Ви з повного нуля відкриєте для себе крипторинок, створите свій криптопортфель з перспективних монет і почнете отримувати щомісячний прибуток",
+	"header-text-1": {
+		"ru": "Вы с полного нуля откроете для себя крипторынок,",
+		"ua": "Ви з повного нуля відкриєте для себе крипторинок,",
+	},
+	"header-text-2": {
+		"ru": "создадите свой криптопортфель из перспективных монет и",
+		"ua": "створите свій криптопортфель з перспективних монет і",
+	},
+	"header-text-3": {
+		"ru": "начнёте получать ежемесячную прибыль",
+		"ua": "почнете отримувати щомісячний прибуток",
 	},
 	"header-button": {
 		"ru": '<img src="images/button/participation-page.png" class="button-pc" alt="">',
@@ -32,8 +40,8 @@ const langArr = {
 		"ua": "Чому зараз варто <br> розібратися у крипторинку?",
 	},
 	"why-card-title": {
-		"ru": "Независимый источник дохода",
-		"ua": "Незалежне джерело доходу",
+		"ru": 'Независимый <br> источник дохода',
+		"ua": 'Незалежне <br> джерело доходу',
 	},
 	"why-card-text": {
 		"ru": "Курсы национальных валют обваливаются, деньги теряют огромную процентную стоимость.",
@@ -86,6 +94,10 @@ const langArr = {
 	"result-card-title": {
 		"ru": "Базовые знания",
 		"ua": "Базові знання",
+	},
+	"result-second-card-title": {
+		"ru": "Заработок",
+		"ua": "Заробіток",
 	},
 	"result-text-1": {
 		"ru": "С полного нуля",
@@ -223,67 +235,67 @@ const langArr = {
 		"ru": "30 минут",
 		"ua": "30 хвилин",
 	},
-	"lang-program-lesson-content-title-1": {
+	"program-lesson-content-title-1": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-2": {
+	"program-lesson-content-title-2": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-3": {
+	"program-lesson-content-title-3": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-4": {
+	"program-lesson-content-title-4": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-5": {
+	"program-lesson-content-title-5": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-6": {
+	"program-lesson-content-title-6": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-7": {
+	"program-lesson-content-title-7": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-8": {
+	"program-lesson-content-title-8": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-9": {
+	"program-lesson-content-title-9": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-10": {
+	"program-lesson-content-title-10": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-11": {
+	"program-lesson-content-title-11": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-12": {
+	"program-lesson-content-title-12": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-13": {
+	"program-lesson-content-title-13": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-14": {
+	"program-lesson-content-title-14": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-15": {
+	"program-lesson-content-title-15": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
-	"lang-program-lesson-content-title-16": {
+	"program-lesson-content-title-16": {
 		"ru": "Содержание урока:",
 		"ua": "Зміст уроку",
 	},
@@ -313,7 +325,7 @@ const langArr = {
 	},
 	"program-lesson-title-2": {
 		"ru": "Урок 2. Способы заработка в криптовалюте",
-		"ua": "Урок 2. Способи заробітку на криптовалюті.",
+		"ua": "Урок 2. Способи заробітку на криптовалюті",
 	},
 	"program-lesson-time-2": {
 		"ru": "30 минут",
@@ -357,7 +369,7 @@ const langArr = {
 	},
 	"program-lesson-title-3": {
 		"ru": "Урок 3.Типы криптовалют и скам проекты",
-		"ua": "Урок 3. Типи криптовалют та скам проєкти.",
+		"ua": "Урок 3. Типи криптовалют та скам проєкти",
 	},
 	"program-lesson-time-3": {
 		"ru": "30 минут",
@@ -385,7 +397,7 @@ const langArr = {
 	},
 	"program-lesson-title-4": {
 		"ru": "Урок 4. Binance и работа на бирже",
-		"ua": "Урок 4. Binance та робота на біржі.",
+		"ua": "Урок 4. Binance та робота на біржі",
 	},
 	"program-lesson-time-4": {
 		"ru": "30 минут",
@@ -498,8 +510,8 @@ const langArr = {
 	},
 
 	"program-lesson-title-8": {
-		"ru": "Урок 6. Базовый разбор графика",
-		"ua": "Урок 6. Базовий розбір графіку",
+		"ru": "Урок 8. Основы инвестирования в криптовалюты",
+		"ua": "Урок 8. Основи інвестування у криптовалюти",
 	},
 	"program-lesson-time-8": {
 		"ru": "20 минут",
@@ -1047,7 +1059,5 @@ const langArr = {
 	"faq-fifth-card-text-5": {
 		"ru": "Доступ к интенсиву остаётся у вас на 3 месяца для пакета базовый и 4 месяца для пакета продвинутый. Поэтому смотреть и обучаться сможете в любое удобное время.",
 		"ua": "Доступ до інтенсиву залишається у вас на 3 місяці для пакета базовий і 4 місяці для пакета просунутий. Тому дивитися вчитися ви зможете в будь-який зручний час.",
-	},	
-	
-
+	},
 }

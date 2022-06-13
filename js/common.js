@@ -137,7 +137,7 @@ function changeLanguage() {
     }
     select.value = hash;
 
-    document.querySelector('.lang-header-text').innerHTML = langArr['header-text'][hash];
+    document.querySelector('.lang-header-text-1').innerHTML = langArr['header-text-1'][hash];
     // document.querySelector('.lng-chip').innerHTML = langArr['chip'][hash];
     for (let key in langArr) {
         let elem = document.querySelector('.lang-' + key);

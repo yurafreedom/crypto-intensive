@@ -17,17 +17,22 @@
 <body class="load courses-page">
 	<header class="header">
 		<div class="section-frame header-frame">
-			<div class="crypto-title__descripter table-show-flex">
-				<b>&mdash; ОНЛАЙН <br> ИНТЕНСИВ</b>
-				<p>Новая возможность <br> в&nbsp;текущих реалиях</p>
+			<div class="page-header__language-select">
+				<select class="change-lang">
+					<option value="ua">UA</option>
+					<option value="ru" selected>RU</option>
+				</select>
+				<a href="javascript:;" class="btn--language">
+					<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.53306 8.33251C7.23955 8.62906 6.76045 8.62906 6.46694 8.33251L0.470259 2.27368C0.00153699 1.8001 0.336999 0.996094 1.00331 0.996094L12.9967 0.996095C13.663 0.996095 13.9985 1.80011 13.5297 2.27368L7.53306 8.33251Z" fill="#ABABAB"/></svg>
+				</a>
 			</div>
-			<div class="burger">
+<!-- 			<div class="burger">
 				<span></span>
 				<span></span>
 				<span></span>
-			</div>
+			</div> -->
 		</div>
-		<div class="menu">
+<!-- 		<div class="menu">
 			<div class="menu-wrap">
 				<div class="menu-top-content">
 					<div class="menu-header">
@@ -56,121 +61,147 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</header>
 	<main>
-        <div class="crypto">
+  	<div class="crypto">
 			<div class="section-frame">
 				<div class="crypto-title">
-					<h1>Crypto <br>
-					интенсив</h1>
-					<div class="crypto-title__descripter table-hide">
-						<b>&mdash; ОНЛАЙН ИНТЕНСИВ</b>
-						<p>Новая возможность в&nbsp;текущих реалиях</p>
-					</div>
+					<h1 class="lang-header-title">Crypto <br> интенсив</h1>
+					<div class="crypto-title__descripter table-hide lang-crypto-descripter"><img src="images/descripter.png" alt=""></div>
 				</div>
-				<p class="crypto-info"><b>Вы с полного нуля откроете для&nbsp;себя&nbsp;крипторынок,</b> создадите свой криптопортфель из перспективных монет и <b>начнёте получать ежемесячную прибыль</b></p>
-				<img src="images/person-mob.png" class="person-mob" alt="">
+				<p class="crypto-info"><span class="lang-header-text-1">Вы с полного нуля откроете для себя крипторынок,</span> <span class="lang-header-text-2">создадите свой криптопортфель из перспективных монет и</span> <span class="lang-header-text-3">начнёте получать ежемесячную прибыль</span></p>
+<!-- 				<img src="images/person-mob.png" class="person-mob" alt=""> -->
 				<!--<a href="#" class="crypto-btn button js-popup" data-popup="application">-->
-				    <div class="crypto-btn button">
-					<img src="images/button/1ru.png" class="button-pc" alt="">
-					<img src="images/button/1rumob.png" class="button-mob" alt="">
+		    <div class="crypto-btn button">
+					<div class="crypto-btn__wrapper lang-header-button" data-toggle="anchor" data-target="#tarrifs-block"><img src="images/button/participation-page.png" class="button-pc" alt=""></div>
+					<div class="crypto-btn__wrapper lang-header-button-mobile" data-target="#tarrifs-block"><img src="images/button/participation-mob.png" class="button-mob" alt=""></div>
 				</div>
 			</div>
 		</div>
 		<div class="booking">
 			<div class="section-frame">
-				<h2 class="booking-title">Успейте забронировать <br>
-				свое место и бонусы!</h2>
-				<p class="yellow-circle__descriptor yellow-circle__descriptor_mob"><img src="images/icon/plus.svg" alt=""> 3 бонуса</p>
+				<h2 class="booking-title lang-booking-title">Успейте забронировать <br> свое место и бонусы!</h2>
 				<div class="booking-content">
 					<div class="booking-circles">
 						<div class="white-circle">
-							<h3 class="white-circle__title"><span>~2 BTC</span> Инвестиции Влада</h3>
-							<p class="white-circle__info">Разбор криптопортфеля Влада — какие монеты и почему купил Влад и сколько он может заработать.</p>
+							<h3 class="white-circle__title"><span>~2 BTC</span> <span class="lang-white-title">Инвестиции Влада</span></h3>
+							<p class="white-circle__info lang-white-text">Разбор криптопортфеля Влада — какие монеты и почему купил Влад и сколько он может заработать.</p>
 						</div>
 						<div class="yellow-circle">
-							<img src="images/booking-icon.png" class="yellow-circle__icon" alt="">
-							<h3>Топ 5 монет <br>
-							на 2022 год</h3>
-							<p class="yellow-circle__descriptor yellow-circle__descriptor_pc"><img src="images/icon/plus.svg" alt=""> 3 бонуса</p>
+							<h3 class="lang-yellow-title">Словарь <br> для новичков</h3>
+							<p class="lang-yellow-text">Словарь для новичков в мире криптовалют.</p>
 						</div>
-						<img src="images/booking-counter.png" class="booking-counter" alt="">
 					</div>
-					<div class="booking-timer">
-						<div class="booking-book">
-							<div class="booking-book__size">
-								<div class="booking-book__size-content">
-									<span>pdf</span>
-									<p>4.1 мб</p>
+					<div class="booking-wrapper">
+						<div class="booking-vip__title">
+							<div class="booking-vip__picture"><img src="images/vip.png" alt=""></div>
+							<span class="lang-booking-level">Уровень на бинанс</span>
+						</div>
+						<div class="booking-timer">
+							<div class="booking-time">
+								<p class="vocabulary-timer js-timer" data-timer="June 30, 2022 15:00:00">10:10:51:25</p>
+								<ul class="vocabulary-timer-title">
+									<li class="lang-timer-days">дней</li>
+									<li class="lang-timer-hours">часов</li>
+									<li class="lang-timer-minutes">минут</li>
+									<li>секунд</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tariffs-block" id="tarrifs-block">
+			<div class="section-frame">
+				<div class="tariffs-block__wrapper">
+					<div class="tariffs-block__title lang-tarrif-title">Тариф участия</div>
+
+					<div class="tariffs-block__inner-wrapper">
+
+						<div class="tariffs-block__card-block basic">
+							<div class="tariffs-block__card-title lang-tarrif-basic-title">Базовый тариф</div>
+							<div class="tariffs-block__card-list">
+								<ul>
+									<li class="lang-tarrif-basic-option-1">Программа обучения из основных 13 уроков</li>
+									<li class="lang-tarrif-basic-option-2">3-х месячный доступ к материалам</li>
+									<li class="lang-tarrif-basic-option-3">Конспекты к каждому уроку</li>
+									<li class="lang-tarrif-basic-option-4">Доступ к закрытому сообществу <br> в Telegram</li>
+									<li class="lang-tarrif-basic-option-5">Поддержка и ответы на вопросы от кураторов</li>
+									<li class="lang-tarrif-basic-option-6">Прямой эфир с итогами обучения ответами на вопросы от Влада Лыманюка</li>
+									<li class="lang-tarrif-basic-option-7">Доступ к Telegram-каналу с рекомендациями и разбором проектов от Влада</li>
+									<li class="disabled"><span class="lang-tarrif-basic-option-8">Домашнее задание с проверкой от кураторов</span></li>
+									<li class="disabled"><span class="lang-tarrif-basic-option-9">Сертификат об успешном окончании интенсива</span></li>
+									<li class="disabled"><span class="lang-tarrif-basic-option-10">Бонусный урок «Фундаментальный анализ»</span></li>
+									<li class="disabled"><span class="lang-tarrif-basic-option-11">Бонусный урок «NFT и Метавсленные»</span></li>
+									<li class="disabled"><span class="lang-tarrif-basic-option-12">Бонусный урок «Фьючерсная торговля – базовый уровень»</span></li>
+								</ul>
+							</div>
+							<div class="tarrifs-block__bonus-title lang-basic-bonus-title">Цена и бонусы для участников вебинара</div>
+							<div class="tarrifs-block__card-bonus-wrapper">
+								<div class="tarrifs-block__card-bonus-block">
+									<div class="tarrifs-block__card-bonus-icon"><svg width="17" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.158v2.165c0 .55.447.998.998.998h6.649V4.16H.998A.998.998 0 0 0 0 5.158Z" fill="url(#a)"/><path d="M15.51 4.16H8.86v4.16h6.65a.998.998 0 0 0 .998-.997V5.158a.998.998 0 0 0-.999-.998Z" fill="url(#b)"/><path d="M.928 17.682c0 .357.29.647.646.647h6.073V9.057H.927v8.625Z" fill="url(#c)"/><path d="M8.86 18.329h6.073c.357 0 .647-.29.647-.647V9.057H8.86v9.272Z" fill="url(#d)"/><path d="M4 3.457c.208.117.634.272 1.908.272.703 0 1.324-.048 1.35-.05a.421.421 0 0 0 .342-.614C7.408 2.692 6.41.808 5.698.41a1.745 1.745 0 0 0-2.373.674 1.746 1.746 0 0 0 .674 2.373Zm.061-1.962a.902.902 0 0 1 1.226-.348c.262.146.792.924 1.25 1.726-.19.007-.406.012-.629.012-1.116 0-1.429-.126-1.499-.165a.902.902 0 0 1-.348-1.225Z" fill="url(#e)"/><path d="M9.25 3.68c.026.001.647.05 1.35.05 1.274 0 1.7-.156 1.909-.272a1.747 1.747 0 0 0 .674-2.373A1.746 1.746 0 0 0 10.81.41c-.713.398-1.71 2.282-1.902 2.655a.422.422 0 0 0 .342.614Zm1.97-2.533a.9.9 0 1 1 .878 1.574c-.07.038-.383.165-1.499.165-.223 0-.438-.006-.628-.012.458-.803.988-1.581 1.25-1.727Z" fill="url(#f)"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(7.14514 3.60303 -10.00752 19.84585 2.612 5.061)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(26.76 -4.902 26.646) scale(8.00207 22.2262)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(51.974 -9.74 8.839) scale(10.1916 34.1673)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6.27822 8.02836 -26.91503 21.0477 11.156 11.066)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="e" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.835 .85 7.678) scale(5.23555 17.1678)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="f" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.836 3.728 16.58) scale(5.23561 17.1683)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient></defs></svg></div>
+									<div class="tarrifs-block__card-bonus-title lang-bonus-card-title-1">Бонусный файл «Словарь <br> для новичков»</div>
+								</div>
+								<div class="tarrifs-block__card-bonus-block">
+									<div class="tarrifs-block__card-bonus-icon"><svg width="17" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.158v2.165c0 .55.447.998.998.998h6.649V4.16H.998A.998.998 0 0 0 0 5.158Z" fill="url(#a)"/><path d="M15.51 4.16H8.86v4.16h6.65a.998.998 0 0 0 .998-.997V5.158a.998.998 0 0 0-.999-.998Z" fill="url(#b)"/><path d="M.928 17.682c0 .357.29.647.646.647h6.073V9.057H.927v8.625Z" fill="url(#c)"/><path d="M8.86 18.329h6.073c.357 0 .647-.29.647-.647V9.057H8.86v9.272Z" fill="url(#d)"/><path d="M4 3.457c.208.117.634.272 1.908.272.703 0 1.324-.048 1.35-.05a.421.421 0 0 0 .342-.614C7.408 2.692 6.41.808 5.698.41a1.745 1.745 0 0 0-2.373.674 1.746 1.746 0 0 0 .674 2.373Zm.061-1.962a.902.902 0 0 1 1.226-.348c.262.146.792.924 1.25 1.726-.19.007-.406.012-.629.012-1.116 0-1.429-.126-1.499-.165a.902.902 0 0 1-.348-1.225Z" fill="url(#e)"/><path d="M9.25 3.68c.026.001.647.05 1.35.05 1.274 0 1.7-.156 1.909-.272a1.747 1.747 0 0 0 .674-2.373A1.746 1.746 0 0 0 10.81.41c-.713.398-1.71 2.282-1.902 2.655a.422.422 0 0 0 .342.614Zm1.97-2.533a.9.9 0 1 1 .878 1.574c-.07.038-.383.165-1.499.165-.223 0-.438-.006-.628-.012.458-.803.988-1.581 1.25-1.727Z" fill="url(#f)"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(7.14514 3.60303 -10.00752 19.84585 2.612 5.061)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(26.76 -4.902 26.646) scale(8.00207 22.2262)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(51.974 -9.74 8.839) scale(10.1916 34.1673)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6.27822 8.02836 -26.91503 21.0477 11.156 11.066)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="e" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.835 .85 7.678) scale(5.23555 17.1678)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="f" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.836 3.728 16.58) scale(5.23561 17.1683)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient></defs></svg></div>
+									<div class="tarrifs-block__card-bonus-title lang-bonus-card-title-2">Бонус «Разбор инвестиций Влада Лыманюка на 80.000$»</div>
 								</div>
 							</div>
-							<img src="images/booking-book.png" class="booking-book__photo" alt="">
+							<div class="tarrifs-block__card-price">90$ — 2.990 грн</div>
+							<div class="tarrifs-block__card-wrapper">
+								<a href="javascript:;" class="btn btn--buy lang-tarrif-button-buy"><img src="images/button/participation.png" alt=""></a>
+								<a href="javascript:;" class="btn btn--booking"><img src="images/btn-booking.png" alt=""></a>
+							</div>
+							<div class="tarrifs-block__card-descriptions"><span class="lang-tarrif-basic-description">Если у вас остались вопросы по оплате или вы хотите оплатить в USDT</span> <a href="#" class="lang-tarrif-basic-contact">– пишите сюда</a></div>
 						</div>
-						<div class="booking-time">
-							<p class="vocabulary-timer js-timer" data-timer="April 30, 2022 15:00:00">10:10:51:25</p>
-							<ul class="vocabulary-timer-title">
-								<li>дней</li>
-								<li>часов</li>
-								<li>минут</li>
-								<li>секунд</li>
-							</ul>
+
+						<div class="tariffs-block__card-block pro">
+							<div class="tariffs-block__card-title lang-tarrif-pro-title">Продвинутый</div>
+							<div class="tariffs-block__card-list">
+								<ul>
+									<li class="lang-tarrif-pro-option-1">Программа обучения из основных 13 уроков</li>
+									<li class="lang-tarrif-pro-option-2">3-х месячный доступ к материалам</li>
+									<li class="lang-tarrif-pro-option-3">Конспекты к каждому уроку</li>
+									<li class="lang-tarrif-pro-option-4">Доступ к закрытому сообществу в Telegram</li>
+									<li class="lang-tarrif-pro-option-5">Поддержка и ответы на вопросы от кураторов</li>
+									<li class="lang-tarrif-pro-option-6">Прямой эфир с итогами обучения ответами на вопросы от Влада Лыманюка</li>
+									<li class="lang-tarrif-pro-option-7">Доступ к Telegram-каналу с рекомендациями и разбором проектов от Влада</li>
+									<li class="lang-tarrif-pro-option-8">Домашнее задание с проверкой от кураторов</li>
+									<li class="lang-tarrif-pro-option-9">Сертификат об успешном окончании интенсива</li>
+									<li class="lang-tarrif-pro-option-10">Бонусный урок <br> «Фундаментальный анализ»</li>
+									<li class="lang-tarrif-pro-option-11">Бонусный урок «NFT и Метавсленные»</li>
+									<li class="lang-tarrif-pro-option-12">Бонусный урок «Фьючерсная торговля – базовый уровень»</li>
+								</ul>
+							</div>
+							<div class="tarrifs-block__bonus-title lang-basic-bonus-title-2 pro">Цена и бонусы для участников вебинара</div>
+							<div class="tarrifs-block__card-bonus-wrapper">
+								<div class="tarrifs-block__card-bonus-block">
+									<div class="tarrifs-block__card-bonus-icon"><svg width="17" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.158v2.165c0 .55.447.998.998.998h6.649V4.16H.998A.998.998 0 0 0 0 5.158Z" fill="url(#a)"/><path d="M15.51 4.16H8.86v4.16h6.65a.998.998 0 0 0 .998-.997V5.158a.998.998 0 0 0-.999-.998Z" fill="url(#b)"/><path d="M.928 17.682c0 .357.29.647.646.647h6.073V9.057H.927v8.625Z" fill="url(#c)"/><path d="M8.86 18.329h6.073c.357 0 .647-.29.647-.647V9.057H8.86v9.272Z" fill="url(#d)"/><path d="M4 3.457c.208.117.634.272 1.908.272.703 0 1.324-.048 1.35-.05a.421.421 0 0 0 .342-.614C7.408 2.692 6.41.808 5.698.41a1.745 1.745 0 0 0-2.373.674 1.746 1.746 0 0 0 .674 2.373Zm.061-1.962a.902.902 0 0 1 1.226-.348c.262.146.792.924 1.25 1.726-.19.007-.406.012-.629.012-1.116 0-1.429-.126-1.499-.165a.902.902 0 0 1-.348-1.225Z" fill="url(#e)"/><path d="M9.25 3.68c.026.001.647.05 1.35.05 1.274 0 1.7-.156 1.909-.272a1.747 1.747 0 0 0 .674-2.373A1.746 1.746 0 0 0 10.81.41c-.713.398-1.71 2.282-1.902 2.655a.422.422 0 0 0 .342.614Zm1.97-2.533a.9.9 0 1 1 .878 1.574c-.07.038-.383.165-1.499.165-.223 0-.438-.006-.628-.012.458-.803.988-1.581 1.25-1.727Z" fill="url(#f)"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(7.14514 3.60303 -10.00752 19.84585 2.612 5.061)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(26.76 -4.902 26.646) scale(8.00207 22.2262)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(51.974 -9.74 8.839) scale(10.1916 34.1673)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6.27822 8.02836 -26.91503 21.0477 11.156 11.066)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="e" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.835 .85 7.678) scale(5.23555 17.1678)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="f" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.836 3.728 16.58) scale(5.23561 17.1683)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient></defs></svg></div>
+									<div class="tarrifs-block__card-bonus-title lang-bonus-card-title-3">Бонусный файл «Словарь <br> для новичков»</div>
+								</div>
+								<div class="tarrifs-block__card-bonus-block">
+									<div class="tarrifs-block__card-bonus-icon"><svg width="17" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.158v2.165c0 .55.447.998.998.998h6.649V4.16H.998A.998.998 0 0 0 0 5.158Z" fill="url(#a)"/><path d="M15.51 4.16H8.86v4.16h6.65a.998.998 0 0 0 .998-.997V5.158a.998.998 0 0 0-.999-.998Z" fill="url(#b)"/><path d="M.928 17.682c0 .357.29.647.646.647h6.073V9.057H.927v8.625Z" fill="url(#c)"/><path d="M8.86 18.329h6.073c.357 0 .647-.29.647-.647V9.057H8.86v9.272Z" fill="url(#d)"/><path d="M4 3.457c.208.117.634.272 1.908.272.703 0 1.324-.048 1.35-.05a.421.421 0 0 0 .342-.614C7.408 2.692 6.41.808 5.698.41a1.745 1.745 0 0 0-2.373.674 1.746 1.746 0 0 0 .674 2.373Zm.061-1.962a.902.902 0 0 1 1.226-.348c.262.146.792.924 1.25 1.726-.19.007-.406.012-.629.012-1.116 0-1.429-.126-1.499-.165a.902.902 0 0 1-.348-1.225Z" fill="url(#e)"/><path d="M9.25 3.68c.026.001.647.05 1.35.05 1.274 0 1.7-.156 1.909-.272a1.747 1.747 0 0 0 .674-2.373A1.746 1.746 0 0 0 10.81.41c-.713.398-1.71 2.282-1.902 2.655a.422.422 0 0 0 .342.614Zm1.97-2.533a.9.9 0 1 1 .878 1.574c-.07.038-.383.165-1.499.165-.223 0-.438-.006-.628-.012.458-.803.988-1.581 1.25-1.727Z" fill="url(#f)"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(7.14514 3.60303 -10.00752 19.84585 2.612 5.061)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(26.76 -4.902 26.646) scale(8.00207 22.2262)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(51.974 -9.74 8.839) scale(10.1916 34.1673)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6.27822 8.02836 -26.91503 21.0477 11.156 11.066)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="e" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.835 .85 7.678) scale(5.23555 17.1678)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient><radialGradient id="f" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(35.836 3.728 16.58) scale(5.23561 17.1683)"><stop stop-color="#7A651F"/><stop offset=".55" stop-color="#A58B36" stop-opacity=".54"/><stop offset="1" stop-color="#B09332" stop-opacity="0"/></radialGradient></defs></svg></div>
+									<div class="tarrifs-block__card-bonus-title lang-bonus-card-title-4">Бонус «Разбор инвестиций Влада Лыманюка на 80.000$»</div>
+								</div>
+							</div>
+							<div class="tarrifs-block__card-old-price">120$ — 3.990 грн</div>
+							<div class="tarrifs-block__card-price">90$ — 2.990 грн</div>
+							<div class="tarrifs-block__card-wrapper">
+								<a href="javascript:;" class="btn btn--buy lang-tarrif-pro-button-buy"><img src="images/button/participation.png" alt=""></a>
+								<a href="javascript:;" class="btn btn--booking"><img src="images/btn-booking.png" alt=""></a>
+							</div>
+							<div class="tarrifs-block__card-descriptions"><span class="lang-tarrif-pro-description">Если у вас остались вопросы по оплате или вы хотите оплатить в USDT</span> <a href="#" class="lang-tarrif-pro-contact">– пишите сюда</a></div>
 						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="participation">
-			<div class="section-frame">
-				<h2 class="page-title page-participation-title">Тариф участия</h2>
-				<div class="participation-item">
-					<h3 class="participation-title">Crypto интенсив</h3>
-					<div class="participation-info">
-						<div class="participation-info__item">
-							<img src="images/icon/program-list.png" alt="">
-							<p>Программа обучения из 12 уроков</p>
-						</div>
-						<div class="participation-info__item">
-							<img src="images/icon/program-list.png" alt="">
-							<p>3-х месячный доступ к материалам</p>
-						</div>
-						<div class="participation-info__item">
-							<img src="images/icon/program-list.png" alt="">
-							<p>Доступ к закрытому сообществу в Telegram</p>
-						</div>
-						<div class="participation-info__item">
-							<img src="images/icon/program-list.png" alt="">
-							<p>Прямой эфир с&nbsp;ответами на&nbsp;вопросы и&nbsp;итогами от&nbsp;Влада&nbsp;Лыманюка</p>
-						</div>
-					</div>
-					<div class="participation-gift">
-						<div class="participation-gift__item participation-gift_1">
-							<img src="images/icon/rate-icon.png" alt="">
-							<p>топ 5 монет на 2022 год</p>
-						</div>
-						<div class="participation-gift__item participation-gift_2">
-							<img src="images/icon/rate-icon.png" alt="">
-							<p>Бонус «Разбор инвестиций
-							Влада Лыманюка на 80.000$»</p>
-						</div>
-						<div class="participation-gift__item participation-gift_3">
-							<img src="images/icon/rate-icon.png" alt="">
-							<p>Бонусный файл «Словарь для новичков»</p>
-						</div>
-					</div>
-					<div class="participation-price">
-						<span>2 990 грн </span>
-						<p>Часть денег пойдёт <br>
-						на благотворительный фонд</p>
-					</div>
-					<!--<a href="#" class="participation-button button js-popup" data-popup="application">-->
-					    <div class="participation-button button">
-						<img src="images/button/3ru.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-        	<div class="popup-frame target-frame">
+
+  	<div class="popup-frame target-frame">
       <form action="#" method="post" class="popup popup-application target-box submit-form" data-popup="application">
         <img src="images/icon/close.png" class="popup-close" alt="">
         <h2 class="popup-title">заполните данные чтобы перейти к&nbsp;оплате</h2>
@@ -287,6 +318,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/sweetalert.min.js"></script>
+	<script src="js/lang.js"></script>
 	<script src="js/slick.min.js" ></script>
 	<script src="js/core.js"></script>
 	<script src="js/common.js"></script>

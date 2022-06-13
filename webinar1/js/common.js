@@ -84,3 +84,49 @@ $(".menu").click(function (e){ // событие клика по веб-доку
 $('.popup-check').click(function(e) {
   $(this).toggleClass('popup-check_active');
 });
+
+const select = document.querySelector('select');
+const allLang = ['ru', 'ua'];
+
+select.addEventListener('change', changeURLLanguage);
+
+// перенаправить на url с указанием языка
+function changeURLLanguage() {
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+}
+
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    console.log(hash);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#ru';
+        location.reload();
+    }
+    select.value = hash;
+
+    document.querySelector('.lang-header-text-1').innerHTML = langArr['header-text-1'][hash];
+    // document.querySelector('.lng-chip').innerHTML = langArr['chip'][hash];
+    for (let key in langArr) {
+        let elem = document.querySelector('.lang-' + key);
+        if (elem) {
+            elem.innerHTML = langArr[key][hash];
+        }
+
+    }
+}
+
+changeLanguage();
+
+$('[data-toggle="anchor"]').click(function(e) {
+  e.preventDefault();
+  
+  var dataTarget = $(this).attr('data-target'),
+  targetPos = $(dataTarget).offset().top;
+
+  $('html,body').animate({
+  scrollTop: targetPos
+  }, 2000);
+});
