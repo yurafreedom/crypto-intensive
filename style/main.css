@@ -2429,9 +2429,9 @@ label {
   left: 50%;
   margin-left: -960px;
   width: 1920px;
-  height: 518px;
+  height: 415px;
   background-image: url('../images/stand.png');
-  background-size: 1920px 518px;
+  background-size: 1920px 415px;
   background-repeat: no-repeat;
   z-index: 10;
 }
@@ -2594,7 +2594,7 @@ label {
   height: 2315px;
   background-image: url('../images/bg/tariff-bg.png');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 1920px 2920px;
   background-position: center -700px;
   z-index: -1;
 }
@@ -2608,7 +2608,7 @@ label {
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   .tariffs-block::after {
-    background-position: center -425px;
+    background-position: center -500px;
   }
 }
 
