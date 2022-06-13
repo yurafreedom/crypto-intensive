@@ -2432,7 +2432,7 @@ label {
   background-image: url('../images/stand.png');
   background-size: 1920px 518px;
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 10;
 }
 
 
@@ -2442,6 +2442,15 @@ label {
     height: 300px;
     display: block;
     margin-right: 0;
+  }
+  .community-block::before {
+    left: 0;
+    margin-left: 0;
+    top: -126px;
+    width: 100%;
+    height: 282px;
+    background-size: 100% 282px;
+    background-image: url('../images/stand-mob.png')
   }
 }
 
@@ -3360,14 +3369,17 @@ label {
   .reviews-block__slider-block {
     min-height: 388px;
   }
-  .community-block::before {
-    top: -125px;
-    left: -20px;
-    width: 375px;
-    background-size: 100% auto;
+/*  .reviews-block::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 282px;
+    background-size: 360px 282px;
     background-image: url('../images/stand-mob.png');
     z-index: 1;
-  }
+  }*/
   .community-block::after {
     content: '';
     position: absolute;
