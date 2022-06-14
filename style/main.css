@@ -1373,6 +1373,10 @@ label {
       -webkit-background-size: cover;
               background-size: cover; } }
 
+.why-item:nth-child(3) .why-item__counter-circle {
+  margin-top: -167px;
+}
+
 .intensive {
   position: relative;
   display: block;
@@ -1989,14 +1993,14 @@ label {
   z-index: 2; }
   @media only screen and (max-width: 767px) {
     .program {
-      margin-top: 173px; } }
+      margin-top: 73px; } }
 
 @media screen and (max-width: 767px) {
   .courses-descripter {
     position: absolute;
     width: 100%;
     max-width: 320px;
-    bottom: -259px;
+    bottom: -159px;
   }
   .courses {
     padding-bottom: 150px;
@@ -4586,8 +4590,8 @@ select.change-lang {
   z-index: 2; }
   @media only screen and (max-width: 720px) {
     .company-title {
-      max-width: 302px;
-      font-size: 60px;
+      max-width: 290px;
+      font-size: 62px;
       margin: 0 auto; } }
 
 .company-list {
