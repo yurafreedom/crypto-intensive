@@ -160,3 +160,20 @@ $('[data-toggle="anchor"]').click(function(e) {
   scrollTop: targetPos
   }, 2000);
 });
+
+// var swiper = new Swiper(".reviews-block__slider-block", {
+//   grabCursor: true,
+//   slidesPerView: 3,
+//   spaceBetween: 69,
+//   // effect: "creative",
+//   centeredSlides: true,
+//   // creativeEffect: {
+//   //   prev: {
+//   //     shadow: true,
+//   //     // translate: [0, 0, -400],
+//   //   },
+//   //   next: {
+//   //     translate: ["100%", 0, 0],
+//   //   },
+//   // },
+// });

@@ -2068,7 +2068,21 @@ label {
     margin-bottom: 0; }
   @media only screen and (max-width: 720px) {
     .program-item {
-      margin-bottom: 30px; } }
+      margin-bottom: 0;
+    }
+    .program-item:not(:last-child) {
+      margin-bottom: 23px;
+    }
+    .program-item:nth-child(6) {
+      margin-bottom: 35px;
+    }
+    .program-item:nth-child(13) {
+      margin-bottom: 35px;
+    }
+    .program-item:nth-child(14) {
+      margin-bottom: 35px;
+    }
+  }
 
 .program-item__header {
   padding: 40px 44px;
@@ -2346,7 +2360,7 @@ label {
   background-image: url('../images/checked.png');
 }
 
-.reviews-block__slide.slick-slide {
+.reviews-block__slide {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2380,12 +2394,15 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(66, 80, 112, 0.55);
+  background-color: rgba(66, 80, 112, 0.35);
+}
+
+.reviews-block__slide.slick-center {
+  top: -59px;
 }
 
 .reviews-block__slide.slick-slide:not(.slick-center) {
   position: relative;
-  top: 56px;
   background-color: rgba(11, 11, 12, 0.8);
 }
 
@@ -2508,14 +2525,18 @@ label {
     display: block;
     margin-right: 0;
   }
+  .community-block {
+    margin-top: -44px;
+  }
   .community-block::before {
     left: 0;
     margin-left: 0;
-    top: -126px;
+    top: -94px;
     width: 100%;
     height: 282px;
     background-size: 100% 282px;
-    background-image: url('../images/stand-mob.png')
+    background-image: url('../images/stand-mob.png');
+    z-index: 1;
   }
 }
 
@@ -3095,6 +3116,7 @@ label {
 .reviews-block__slider-block {
   position: relative;
   min-height: 632px;
+  top: 59px;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
@@ -3118,6 +3140,12 @@ label {
   }
   .intensive {
     padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .tariffs-block::after {
+    background: 0;
   }
 }
 
@@ -3310,6 +3338,7 @@ label {
   }
   .reviews-block__card-block:nth-child(3) {
     padding-top: 0;
+    right: 0;
   }
   .reviews-block__card-icon svg {
     width: 30px;
@@ -3333,6 +3362,7 @@ label {
   }
   .btn--prev {
     left: 58px;
+    margin-top: -75px;
     width: 46px;
     height: 46px;
     z-index: 10;
@@ -3345,9 +3375,11 @@ label {
     background-size: 15px 26px;
   }
   .btn--next {
+    margin-top: -75px;
     right: 58px;
     width: 46px;
     height: 46px;
+    z-index: 10;
   }
   .btn--next::after {
     top: 12px;
@@ -3464,17 +3496,11 @@ label {
   .tarrifs-block__card-wrapper .btn {
     max-width: 234px;
   }
-/*  .page-block__wrapper {
-    background-image: url('../images/bg/company-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center -100px;
-  }*/
   .page-block__wrapper {
     background-image: url('../images/bg/company-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center 950px;
+    background-position: center 875px;
   }
   .partners-block {
     padding-top: 70px;
@@ -3489,6 +3515,7 @@ label {
     font-size: 16px;
     margin-bottom: 35px;
     padding-top: 16px;
+    padding-left: 42px;
     padding-bottom: 17px;
   }
   .partners-block__content-title::before {
@@ -3537,7 +3564,7 @@ label {
     background-size: 100% auto;
     background-image: url('../images/dark.png');
     background-repeat: no-repeat;
-    z-index: 10
+    z-index: 1;
   }
   .reviews-block__wrapper {
     width: calc(100% + 60px);
@@ -3550,6 +3577,18 @@ label {
   .reviews-block__metrics-block {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .page-block__wrapper {
+    background-position: center 1175px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .page-block__wrapper {
+    background-position: center 675px;
   }
 }
 
@@ -3723,6 +3762,10 @@ select.change-lang {
   line-height: 1.2;
   text-transform: uppercase;
   color: #ABABAB;
+}
+
+.program-item__result-text-secret {
+  filter: blur(5px);
 }
 
 @media screen and (max-width: 767px) {

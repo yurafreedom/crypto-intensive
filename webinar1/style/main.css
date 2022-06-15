@@ -967,20 +967,6 @@ label {
   padding-top: 100px;
 }
 
-/*.tariffs-block::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2315px;
-  background-image: url('../images/tariff-desktop-bg.png');
-  background-repeat: no-repeat;
-  background-size: 1920px 2920px;
-  background-position: top center;
-  z-index: -1;
-}*/
-
 .tariffs-block__wrapper {
   position: relative;
   display: block;
@@ -1359,7 +1345,7 @@ label {
     margin-bottom: 60px;
   }
   .tariffs-block__card-block {
-    max-width: 290px;
+    max-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
   }
